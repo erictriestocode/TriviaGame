@@ -5,6 +5,7 @@
 // if userInput = question.correctAnswer, make correct status true, correctTotal++
 // 
 // EDIT 10PM WED 1/9/2019: Ok so upon a fair bit of Googling it appears that I way over thought this. Going to try and get it working anyways.
+// EDIT 11PM WED 1/9/2019: Yeah...ok. pseudocoding a lot, looking into ways to get something working. Feeling seems to be shared with other members of my study group on Slack.
 
 var timer = 120000;
 var totalCorrect = 0;
