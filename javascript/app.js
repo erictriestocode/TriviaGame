@@ -6,41 +6,60 @@
 
 var timer = 120000;
 var totalCorrect = 0;
+var totalIncorrect = 0;
 var questionArray = [questionOne,questionTwo,questionThree];
+// Compare userChoice to entry in correctAnswers Array?
+// var correctAnswers = [answer2,answer2,answer4];
 var userChoice;
 
 
-// questions
+// **** Question Objects ****
 
 var questionOne = {
+    id: q1,
     text: "In what year did the US declare Independence?",
     answer1: "1620",
     answer2: "1776",
     answer3: "1812",
     answer4: "1782",
+    // correct: answer2
 
 };
 
 var questionTwo = {
+    id: q2,
     text: "How many players are on a baseball field during play?",
     answer1: "8",
     answer2: "9",
     answer3: "10",
     answer4: "11",
+    // correct: answer2
 
 };
 
 var questionThree = {
+    id: q3,
     text: "What kind of person shall not be honored on a postage stamp?",
     answer1: "A King or Queen",
     answer2: "A Sports Star",
     answer3: "A President",
     answer4: "A living person",
+    // correct: answer4
 };
 
 
-// Functions
+// **** Functions ****
 
-function checkcorrect() {
-    if (userChoice === )
+function checkCorrect() {
+    // if (userChoice === )
+    // if userchoice for this question equals correct:
+    // - totalCorrect++
+    // else
+    // 
 };
+
+function generateHtml(){
+    // for (i = 0, i =< questionArray.length, i++ )
+        // $(.questions).html("<div id =" + "></div>" )
+
+}
