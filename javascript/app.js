@@ -3,6 +3,8 @@
 // **** Some mental notes for myself below as I go along to chart my line of thinking ****
 //
 // if userInput = question.correctAnswer, make correct status true, correctTotal++
+// 
+// EDIT 10PM WED 1/9/2019: Ok so upon a fair bit of Googling it appears that I way over thought this. Going to try and get it working anyways.
 
 var timer = 120000;
 var totalCorrect = 0;
@@ -59,7 +61,7 @@ function checkCorrect() {
 };
 
 function generateHtml(){
-    // for (i = 0, i =< questionArray.length, i++ )
+    // for (i = 0, i < questionArray.length, i++ )
         // $(.questions).html("<div id =" + "></div>" )
 
 }

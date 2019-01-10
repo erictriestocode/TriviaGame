@@ -24,23 +24,29 @@
                 ability. When you are ready, click start to begin!</p>
         </div>
         <div class="scoreboard">
-            <p>Total correct: </p>
+            <div class="score">
+                <p>Total correct: </p>
+            </div>
+            <div class="timer">
+                <p>Timer: </p>
+            </div>
         </div>
-        <button id="start">START GAME!</button>
+        <button class="buttons" id="start">START GAME!</button>
 
         <!-- Have below be sent to the DOM upon click OR use .hide() -->
+        
         <!-- to be removed -->
         <br>
 
         <div class="hidden">
             <div class="questions">
-                
+                <!-- Questions to be dynamically written here -->
             </div>
 
             <!-- to be removed -->
             <br>
 
-            <button class="submit">Submit Responses!</button>
+            <button class="buttons" id="submit">Submit Responses!</button>
         </div>
 
     </div>
