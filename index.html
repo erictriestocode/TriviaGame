@@ -1,15 +1,49 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!-- Jquery Source link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/javascript/app.js"></script>
+    <!-- Some Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Shrikhand" rel="stylesheet">
+    <script src="javascript/app.js"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="title">
+            <h1 id="mainTitle">Welcome To Trivia</h1>
+        </div>
+        <div class="instructions">
+            <p id="directions">You have 2 minutes to successfully answer all of these questions to the best of your
+                ability. When you are ready, click start to begin!</p>
+        </div>
+        <div class="scoreboard">
+            <p>Total correct: </p>
+        </div>
+        <button id="start">START GAME!</button>
+
+        <!-- Have below be sent to the DOM upon click OR use .hide() -->
+        <!-- to be removed -->
+        <br>
+
+        <div class="hidden">
+            <div class="Questions">
+                <form action=""></form>
+            </div>
+
+            <!-- to be removed -->
+            <br>
+
+            <button class="submit">Submit Responses!</button>
+        </div>
+
+    </div>
 </body>
+
 </html>
