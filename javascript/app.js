@@ -3,7 +3,7 @@
 // **** Some mental notes for myself below as I go along to chart my line of thinking ****
 //
 // if userInput = question.correctAnswer, make correct status true, correctTotal++
-// 
+//
 // EDIT 10PM WED 1/9/2019: Ok so upon a fair bit of Googling it appears that I way over thought this. Going to try and get it working anyways.
 // EDIT 11PM WED 1/9/2019: Yeah...ok. pseudocoding a lot, looking into ways to get something working. Feeling seems to be shared with other members of my study group on Slack.
 
@@ -15,11 +15,13 @@ var questionArray = [questionOne,questionTwo,questionThree];
 // var correctAnswers = [answer2,answer2,answer4];
 var userChoice;
 
+$(".questions").onClick
+
 
 // **** Question Objects ****
 
 var questionOne = {
-    id: q1,
+    id: "q1",
     text: "In what year did the US declare Independence?",
     answer1: "1620",
     answer2: "1776",
@@ -30,7 +32,7 @@ var questionOne = {
 };
 
 var questionTwo = {
-    id: q2,
+    id: "q2",
     text: "How many players are on a baseball field during play?",
     answer1: "8",
     answer2: "9",
@@ -41,7 +43,7 @@ var questionTwo = {
 };
 
 var questionThree = {
-    id: q3,
+    id: "q3",
     text: "What kind of person shall not be honored on a postage stamp?",
     answer1: "A King or Queen",
     answer2: "A Sports Star",
@@ -58,11 +60,20 @@ function checkCorrect() {
     // if userchoice for this question equals correct:
     // - totalCorrect++
     // else
-    // 
+    //
 };
 
 function generateHtml(){
+
     // for (i = 0, i < questionArray.length, i++ )
-        // $(.questions).html("<div id =" + "></div>" )
+        // var questionWrite = <div class = "question" id = questionArray[i].id>
+            // questionwrite += <h3>questionArray[i].text</h3>;
+            // questionWrite += <ol>;
+            // questionWrite += <li value = "1">questionArray[i].answer1</li>
+            // questionWrite += <li value = "2">questionArray[i].answer2</li>
+            // questionWrite += <li value = "3">questionArray[i].answer3</li>
+            // questionWrite += <li value = "4">questionArray[i].answer4</li>
+            // questionWrite += </ol>;
+
 
 }
