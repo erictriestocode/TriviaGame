@@ -6,6 +6,7 @@
 //
 // EDIT 10PM WED 1/9/2019: Ok so upon a fair bit of Googling it appears that I way over thought this. Going to try and get it working anyways.
 // EDIT 11PM WED 1/9/2019: Yeah...ok. pseudocoding a lot, looking into ways to get something working. Feeling seems to be shared with other members of my study group on Slack.
+// EDIT 8:30PM THURS 1/10/2019: Updating from class break. Adding some more pseudocode and trying to add some functionality. Still a big fail on my part.
 
 var timer = 120000;
 var totalCorrect = 0;
@@ -15,7 +16,15 @@ var questionArray = [questionOne,questionTwo,questionThree];
 // var correctAnswers = [answer2,answer2,answer4];
 var userChoice;
 
-$(".questions").onClick
+$(".questions").on("click", function (event){
+    // start the timer
+    setTimeout(function(){ alert("Hello"); }, timer);
+    // generate the comments
+    generateHtml();
+    // get user input here
+
+
+});
 
 
 // **** Question Objects ****
