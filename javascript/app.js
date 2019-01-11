@@ -11,21 +11,25 @@
 var timer = 120000;
 var totalCorrect = 0;
 var totalIncorrect = 0;
-var questionArray = [questionOne,questionTwo,questionThree];
+var questionArray = [questionOne, questionTwo, questionThree];
 // Compare userChoice to entry in correctAnswers Array?
 // var correctAnswers = [answer2,answer2,answer4];
 var userChoice;
 
-$(".questions").on("click", function (event){
-    // start the timer
-    setTimeout(function(){ alert("Hello"); }, timer);
-    // generate the comments
-    generateHtml();
-    // get user input here
 
+$(document).ready() {
+    $(".questions").on("click", function (event){
+        // start the timer
+        setTimeout(function(){ alert("Hello"); }, timer);
+        // generate the comments
+        generateHtml();
+        // get user input here
+    
+    
+    });
 
-});
-
+    
+}
 
 // **** Question Objects ****
 
@@ -72,17 +76,17 @@ function checkCorrect() {
     //
 };
 
-function generateHtml(){
+function generateHtml() {
 
     // for (i = 0, i < questionArray.length, i++ )
-        // var questionWrite = <div class = "question" id = questionArray[i].id>
-            // questionwrite += <h3>questionArray[i].text</h3>;
-            // questionWrite += <ol>;
-            // questionWrite += <li value = "1">questionArray[i].answer1</li>
-            // questionWrite += <li value = "2">questionArray[i].answer2</li>
-            // questionWrite += <li value = "3">questionArray[i].answer3</li>
-            // questionWrite += <li value = "4">questionArray[i].answer4</li>
-            // questionWrite += </ol>;
+    // var questionWrite = <div class = "question" id = questionArray[i].id>
+    // questionwrite += <h3>questionArray[i].text</h3>;
+    // questionWrite += <ol>;
+    // questionWrite += <li value = "1">questionArray[i].answer1</li>
+    // questionWrite += <li value = "2">questionArray[i].answer2</li>
+    // questionWrite += <li value = "3">questionArray[i].answer3</li>
+    // questionWrite += <li value = "4">questionArray[i].answer4</li>
+    // questionWrite += </ol>;
 
 
 }
