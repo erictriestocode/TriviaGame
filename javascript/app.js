@@ -21,7 +21,7 @@ $(document).ready() {
     $(".questions").on("click", function (event){
         // start the timer
         setTimeout(function(){ alert("Hello"); }, timer);
-        // generate the comments
+        // generate the questions
         generateHtml();
         // get user input here
     
@@ -29,7 +29,7 @@ $(document).ready() {
     });
 
     
-}
+};
 
 // **** Question Objects ****
 
