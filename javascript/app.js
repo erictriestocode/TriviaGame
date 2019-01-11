@@ -7,6 +7,7 @@
 // EDIT 10PM WED 1/9/2019: Ok so upon a fair bit of Googling it appears that I way over thought this. Going to try and get it working anyways.
 // EDIT 11PM WED 1/9/2019: Yeah...ok. pseudocoding a lot, looking into ways to get something working. Feeling seems to be shared with other members of my study group on Slack.
 // EDIT 8:30PM THURS 1/10/2019: Updating from class break. Adding some more pseudocode and trying to add some functionality. Still a big fail on my part.
+// EDIT 10PM THURS 1/10/2019: I'm fried. I'll make more changes tomorrow after submitting.
 
 var timer = 120000;
 var totalCorrect = 0;
@@ -17,7 +18,7 @@ var questionArray = [questionOne, questionTwo, questionThree];
 var userChoice;
 
 
-$(document).ready() {
+$(document).ready(function() {
     $(".questions").on("click", function (event){
         // start the timer
         setTimeout(function(){ alert("Hello"); }, timer);
@@ -29,7 +30,7 @@ $(document).ready() {
     });
 
     
-};
+});
 
 // **** Question Objects ****
 
@@ -40,7 +41,7 @@ var questionOne = {
     answer2: "1776",
     answer3: "1812",
     answer4: "1782",
-    // correct: answer2
+    correct: 2,
 
 };
 
@@ -51,7 +52,7 @@ var questionTwo = {
     answer2: "9",
     answer3: "10",
     answer4: "11",
-    // correct: answer2
+    correct: 2,
 
 };
 
@@ -62,18 +63,17 @@ var questionThree = {
     answer2: "A Sports Star",
     answer3: "A President",
     answer4: "A living person",
-    // correct: answer4
+    correct: 4,
 };
 
 
 // **** Functions ****
 
 function checkCorrect() {
-    // if (userChoice === )
-    // if userchoice for this question equals correct:
+    // if (userChoice === correct )
     // - totalCorrect++
     // else
-    //
+    // - totalIncorrect++
 };
 
 function generateHtml() {
